@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Description</key>
+	<string>Create MVVM</string>
+	<key>Summary</key>
+	<string>Create MVVM</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<string>true</string>
+			<key>Name</key>
+			<string>View name:</string>
+			<key>Description</key>
+			<string>The name of the View to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<string>true</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>withViewModel</string>
+			<key>Required</key>
+			<string>true</string>
+			<key>Name</key>
+			<string>Owns corresponding viewModel</string>
+			<key>Description</key>
+			<string>Whether this View owns a corresponding viewModel</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>NotPersisted</key>
+			<string>true</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>withModel</string>
+			<key>Required</key>
+			<string>true</string>
+			<key>Name</key>
+			<string>Owns corresponding Model</string>
+			<key>Description</key>
+			<string>Whether this View owns a corresponding Model</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<string>true</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>withViewModel</key>
+				<string>true</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
